@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_espers_elements_captain_abilities",
+  "info": {
+    "displayName": "Captain Ability",
+    "icon": "graduation-cap"
+  },
+  "options": {},
+  "attributes": {
+    "effect": {
+      "type": "text"
+    }
+  }
+}

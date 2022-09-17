@@ -1,0 +1,30 @@
+{
+  "name": "discboom-api-backoffice",
+  "private": true,
+  "version": "0.0.1",
+  "description": "An API and its bacoffice for Dislyte.",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/strapi": "4.3.7",
+    "@strapi/plugin-users-permissions": "4.3.7",
+    "@strapi/plugin-i18n": "4.3.7",
+    "pg": "8.6.0"
+  },
+  "author": {
+    "name": "Samuel GALIERE"
+  },
+  "strapi": {
+    "uuid": "e0eef416-49c4-48ff-8545-fd78604277b2"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

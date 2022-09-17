@@ -1,0 +1,110 @@
+{
+  "kind": "collectionType",
+  "collectionName": "espers",
+  "info": {
+    "singularName": "esper",
+    "pluralName": "espers",
+    "displayName": "Esper",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "deity_name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "rarity": {
+      "type": "enumeration",
+      "enum": [
+        "Rare",
+        "Epic",
+        "Legendary"
+      ],
+      "required": true
+    },
+    "element": {
+      "type": "enumeration",
+      "enum": [
+        "Inferno",
+        "Wind",
+        "Flow",
+        "Shimmer"
+      ],
+      "required": true
+    },
+    "hp": {
+      "type": "integer",
+      "required": true
+    },
+    "atk": {
+      "type": "integer",
+      "required": true
+    },
+    "def": {
+      "type": "integer",
+      "required": true
+    },
+    "spd": {
+      "type": "integer",
+      "required": true
+    },
+    "c_rate": {
+      "type": "integer",
+      "required": true,
+      "default": 10,
+      "min": 10
+    },
+    "c_dmg": {
+      "type": "integer",
+      "required": true,
+      "default": 150,
+      "min": 150
+    },
+    "acc": {
+      "type": "integer",
+      "required": true,
+      "default": 0
+    },
+    "resist": {
+      "type": "integer",
+      "default": 20,
+      "required": true,
+      "min": 20
+    },
+    "role": {
+      "type": "enumeration",
+      "enum": [
+        "Fighter",
+        "Defender",
+        "Controller",
+        "Support"
+      ],
+      "required": true
+    },
+    "espers_elements": {
+      "type": "dynamiczone",
+      "components": [
+        "espers-elements.skill",
+        "espers-elements.captain-ability"
+      ],
+      "required": true
+    },
+    "picture": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_espers_elements_skills",
+  "info": {
+    "displayName": "Skill",
+    "icon": "book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "passive",
+        "active"
+      ]
+    },
+    "skill_number": {
+      "type": "enumeration",
+      "enum": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    "cooldown": {
+      "type": "integer",
+      "default": 1,
+      "required": true,
+      "min": 1
+    }
+  }
+}
