@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "relics",
+  "info": {
+    "singularName": "relic",
+    "pluralName": "relics",
+    "displayName": "Relic",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "relic_config": {
+      "type": "json",
+      "required": true
+    }
+  }
+}
