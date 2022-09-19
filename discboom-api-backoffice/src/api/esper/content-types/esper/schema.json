@@ -105,6 +105,16 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "slug_god": {
+      "type": "uid",
+      "targetField": "deity_name",
+      "required": true
     }
   }
 }
